@@ -33,6 +33,8 @@ function App() {
   return (
     <div className="App">
       <MyNavbar />
+      <div className="Flag">
+      </div>
       <div className="App-header">
         <Routes>
           <Route path="/" element={<MyDataTable />} />

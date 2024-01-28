@@ -3,8 +3,8 @@ import Button from 'react-bootstrap/Button';
 
 export default function AboutPage() {
     return (
-        <div style={{ textAlign: 'center', padding: '20px', backgroundColor: 'white' }}>
-            <h1 style={{ fontSize: '24px', fontWeight: 'bold', color: 'black' }}>
+        <div style={{ textAlign: 'center', padding: '20px', backgroundColor: 'yellowgreen'}}>
+            <h1 style={{ fontSize: '24px', fontWeight: 'bold', color: 'black', fontFamily: 'Papyrus'}}>
                 <marquee behavior="" direction="left" loop>
                     American Truck Simulator, the greatest game of all time, does not track achievements well enough.
                     That's where the real truckers come in. We're here to help you track your progress and get that 100% completion.
