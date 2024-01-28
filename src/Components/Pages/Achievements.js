@@ -39,6 +39,7 @@ function Achievements() {
         navigate("/about");
         const [data, setData] = useState([]);
 
+        /*
         useEffect(() => {
         fetch('https://10.82.137.128/Job')
             .then(response => response.json())
@@ -49,6 +50,7 @@ function Achievements() {
             console.error('Error fetching data:', error);
         });
         }, []);
+        */
     }
 
     const columns = [
