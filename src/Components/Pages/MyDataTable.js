@@ -22,34 +22,48 @@ const columns = [
         selector: row => row.status,
         sortable: true,
     }
+    
 ];
 
-const data = [
-    {
-        dlc: 'Base Game',
-        title: 'California Dreamin\'',
-        req: 'Discover every city in California',
-        status: '48%'
-    },
-    {
-        dlc: 'Base Game',
-        title: 'Sea Dog',
-        req: 'Deliver cargo to a port in Oakland and a port in San Francisco',
-        status: '50%'
-    },
-    {
-        dlc:  'Base Game',
-        title: 'Cheers!',
-        req: 'Deliver cargo from all 3 vineyards in California',
-        status: '100%'
-    },
-    {
-        dlc: 'Base Game',
-        title: 'Warming Up',
-        req: 'Drive 10,000 miles during deliveries',
-        status: '100%'
-    },
-]
+// const data = [
+//     {
+//         dlc: 'Base Game',
+//         title: 'California Dreamin\'',
+//         req: 'Discover every city in California',
+//         status: '48%'
+//     },
+//     {
+//         dlc: 'Base Game',
+//         title: 'Sea Dog',
+//         req: 'Deliver cargo to a port in Oakland and a port in San Francisco',
+//         status: '50%'
+//     },
+//     {
+//         dlc:  'Base Game',
+//         title: 'Cheers!',
+//         req: 'Deliver cargo from all 3 vineyards in California',
+//         status: '100%'
+//     },
+//     {
+//         dlc: 'Base Game',
+//         title: 'Warming Up',
+//         req: 'Drive 10,000 miles during deliveries',
+//         status: '100%'
+//     },
+// ]
+
+const data = [];
+
+fetch('https://10.82.137.128/Job')
+    .then(response => 
+        response.json()
+        )
+    .then(apiData => {
+        data = apiData;
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
 
 /*const customStyles = {
     table: {
@@ -65,6 +79,7 @@ function MyDataTable() {
         <DataTable
             columns={columns}
             data={data}
+            theme='dark'
         />
     );
 };
