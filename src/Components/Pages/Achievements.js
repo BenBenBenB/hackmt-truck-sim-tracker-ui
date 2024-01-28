@@ -108,7 +108,7 @@ function Achievements() {
             title: 'Rig Master',
             req: 'Buy your own truck',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/Rig Master.webp"),
             id: '2' 
         },
         {
@@ -116,7 +116,7 @@ function Achievements() {
             title: 'Company Collector',
             req: 'Perform deliveries for at least 15 different companies',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/CompanyCollector.webp"),
             id: '2' 
         },
         {
@@ -124,7 +124,7 @@ function Achievements() {
             title: 'High Five',
             req: 'Complete a perfect delivery (no damage, no fines, in-time) for a job that is at least 600 miles',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/HighFive.webp"),
             id: '2' 
         },
         {
@@ -132,7 +132,7 @@ function Achievements() {
             title: 'Cha-Ching',
             req: 'Earn $100,000 delivering cargos',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/Cha-Ching.webp"),
             id: '2' 
         },
         {
@@ -140,7 +140,7 @@ function Achievements() {
             title: 'Final Makeover',
             req: 'Fully upgrade one of your garages',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/FinalMakeover.webp"),
             id: '2' 
         },
         {
@@ -148,7 +148,7 @@ function Achievements() {
             title: 'Not a Problem',
             req: 'Successfully park a trailer at a delivery point',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/NotAProblem.webp"),
             id: '2' 
         },
         {
@@ -156,7 +156,7 @@ function Achievements() {
             title: 'Like a Boss',
             req: 'Successfully park a trailer at a hard delivery point',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/LikeABoss.webp"),
             id: '2' 
         },
         {
@@ -164,7 +164,7 @@ function Achievements() {
             title: 'I Think I Like It',
             req: 'Finish 50 deliveries',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/IThink.webp"),
             id: '2' 
         },
         {
@@ -172,7 +172,7 @@ function Achievements() {
             title: 'Pimp My Truck',
             req: 'Buy and apply a custom paintjob',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/PimpMy.webp"),
             id: '2' 
         },
         {
@@ -180,7 +180,7 @@ function Achievements() {
             title: 'What\'s Your BMI?',
             req: 'Buy your own truck',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/Bmi.webp"),
             id: '2' 
         },
         {
@@ -188,7 +188,7 @@ function Achievements() {
             title: 'Gas Guzzler',
             req: 'Buy your own truck',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/GasGuzzler.webp"),
             id: '2' 
         },
         {
@@ -196,7 +196,7 @@ function Achievements() {
             title: 'Silver State',
             req: 'Buy your own truck',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/SilverState.webp"),
             id: '2' 
         },
         {
@@ -204,7 +204,7 @@ function Achievements() {
             title: 'Gold Fever',
             req: 'Buy your own truck',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/Gold Fever.webp"),
             id: '2' 
         },
         {
@@ -212,7 +212,7 @@ function Achievements() {
             title: 'Parking Challenge',
             req: 'Buy your own truck',
             status: '100%',
-            imgsrc: require("../images/achievements/Warming up.webp"),
+            imgsrc: require("../images/achievements/ParkingChallenge.webp"),
             id: '2' 
         },
     ]
