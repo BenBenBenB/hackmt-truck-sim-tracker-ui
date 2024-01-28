@@ -11,12 +11,20 @@ export default function AboutPage() {
                 </marquee>
             </h1>
             <div style={{ marginTop: '20px' }}>
-                <Button variant="primary" href="https://github.com/BenBenBenB/truck-sim-tracker" target="_blank" rel="noopener noreferrer">
+                <Button
+                    variant="dark"
+                    href="https://github.com/BenBenBenB/truck-sim-tracker"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     Truck Sim Tracker
                 </Button>
             </div>
             <div style={{ marginTop: '20px' }}>
-                <Button variant="primary" href="https://github.com/BenBenBenB/truck-sim-tracker-ui" target="_blank" rel="noopener noreferrer">
+                <Button 
+                    variant="dark" 
+                    href="https://github.com/BenBenBenB/truck-sim-tracker-ui" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
                     Truck Sim Tracker UI
                 </Button>
             </div>

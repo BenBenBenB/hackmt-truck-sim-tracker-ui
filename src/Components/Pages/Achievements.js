@@ -78,7 +78,7 @@ const data = [
 */
 
 
-function MyDataTable() {
+function Achievements() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -101,4 +101,4 @@ function MyDataTable() {
     );
 };
 
-export default MyDataTable;
+export default Achievements;

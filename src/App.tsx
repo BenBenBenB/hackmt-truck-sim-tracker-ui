@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import MyDataTable from './Components/Pages/MyDataTable';
+import Achievements from './Components/Pages/Achievements';
 import AboutPage from './Components/Pages/AboutPage';
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import DeliveryLog from './Components/Pages/DeliveryLog';
+import AchievementInfo from './Components/Pages/AchievementInfo';
 
 function MyNavbar() {
   return (
@@ -17,8 +17,9 @@ function MyNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/">Achievements</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>
+            <Nav.Link href="/DeliveryLog">Delivery Log</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -35,8 +36,10 @@ function App() {
       <MyNavbar />
       <div className="App-header">
         <Routes>
-          <Route path="/" element={<MyDataTable />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/" element={<Achievements />} />
+          <Route path="/DeliveryLog" element={<DeliveryLog />} />
+          <Route path="/"  element={<AchievementInfo />} />
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
       </div>
