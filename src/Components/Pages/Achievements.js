@@ -37,7 +37,18 @@ function Achievements() {
     const navigate = useNavigate();
     function NavToAchievement(id) {
         navigate("/about");
+        const [data, setData] = useState([]);
 
+        useEffect(() => {
+        fetch('https://10.82.137.128/Job')
+            .then(response => response.json())
+        .then(apiData => {
+            setData(apiData);
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+        }, []);
     }
 
     const columns = [
@@ -49,7 +60,7 @@ function Achievements() {
         },
         {
             name: 'Acheivement Name',
-            cell: row => <button style={{color: 'white', backgroundColor: 'transparent', border: 'transparent'}} onClick={NavToAchievement}>{row.title}</button>,
+            cell: row => <button style={{color: 'white', backgroundColor: 'transparent', border: 'transparent'}} onClick={(row, event) => NavToAchievement(row.id)}>{row.title}</button>,
             sortable: true,
         },
         {
@@ -216,6 +227,15 @@ function Achievements() {
             id: '2' 
         },
     ]
+
+    const customStyles = {
+       table: {
+            style: {
+                height: '500px',
+                color: 'black', 
+            },
+       } ,
+    }
 
     return (
         <DataTable
