@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import DataTable from "react-data-table-component";
+
 
 const columns = [
     {
@@ -52,18 +53,8 @@ const columns = [
 //     },
 // ]
 
-const data = [];
 
-fetch('https://10.82.137.128/Job')
-    .then(response => 
-        response.json()
-        )
-    .then(apiData => {
-        data = apiData;
-    })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-    });
+
 
 /*const customStyles = {
     table: {
@@ -75,6 +66,20 @@ fetch('https://10.82.137.128/Job')
 };
 */
 function MyDataTable() {
+
+    const [data, setData] = useState([]);
+
+    fetch('https://10.82.137.128/Job')
+    .then(response => 
+        response.json()
+        )
+    .then(apiData => {
+        setData(data);
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
+    
     return (
         <DataTable
             columns={columns}
