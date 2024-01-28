@@ -34,56 +34,33 @@ function Achievements() {
     }, []);
     */
 
-    const navigate = useNavigate();
-    function NavToAchievement(id) {
-        navigate("/about");
-        const [data, setData] = useState([]);
-
-        /*
-        useEffect(() => {
-        fetch('https://10.82.137.128/Job')
-            .then(response => response.json())
-        .then(apiData => {
-            setData(apiData);
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
-        });
-        }, []);
-        */
-    }
-
     const columns = [
+        // {
+        //     cell: row => (
+        //         <img src={require(row.imageUrl)} alt={row.name} />
+        //     ),
+        //     width: "70px"
+        // },
         {
-            cell: row => (
-                <img src={row.imgsrc}/>
-            ),
-            width: "70px"
-        },
-        {
-            name: 'Acheivement Name',
-            cell: row => <button style={{color: 'white', backgroundColor: 'transparent', border: 'transparent'}} onClick={(row, event) => NavToAchievement(row.id)}>{row.title}</button>,
-            sortable: true,
-        },
-        {
-            name: 'Requirements',
-            selector: row => row.req,
+            name: 'Achievement Name',
+            //cell: row => <button style={{ color: 'white', backgroundColor: 'transparent', border: 'transparent' }} onClick={(row, event) => NavToAchievement(row.id)}>{row.title}</button>,
+            selector: row => row.name,
             sortable: true,
         },
         {
             name: 'DLC',
-            selector: row => row.dlc,
+            selector: row => row.dlcName,
             sortable: true,
         },
         {
             name: 'Status',
-            selector: row => row.status,
+            selector: row => "todo",
             sortable: true,
         }
-        
+
     ];
-    
-    const data = [
+
+    const testData = [
         {
             dlc: 'Base Game',
             title: 'California Dreamin\'',
@@ -101,7 +78,7 @@ function Achievements() {
             id: '5'
         },
         {
-            dlc:  'Base Game',
+            dlc: 'Base Game',
             title: 'Cheers!',
             req: 'Deliver cargo from all 3 vineyards in California',
             status: '100%',
@@ -114,7 +91,7 @@ function Achievements() {
             req: 'Drive 10,000 miles during deliveries',
             status: '100%',
             imgsrc: require("../images/achievements/Warming up.webp"),
-            id: '7' 
+            id: '7'
         },
         {
             dlc: 'Base Game',
@@ -122,7 +99,7 @@ function Achievements() {
             req: 'Buy your own truck',
             status: '100%',
             imgsrc: require("../images/achievements/Rig Master.webp"),
-            id: '8' 
+            id: '8'
         },
         {
             dlc: 'Base Game',
@@ -130,7 +107,7 @@ function Achievements() {
             req: 'Perform deliveries for at least 15 different companies',
             status: '100%',
             imgsrc: require("../images/achievements/CompanyCollector.webp"),
-            id: '9' 
+            id: '9'
         },
         {
             dlc: 'Base Game',
@@ -138,7 +115,7 @@ function Achievements() {
             req: 'Complete a perfect delivery (no damage, no fines, in-time) for a job that is at least 600 miles',
             status: '100%',
             imgsrc: require("../images/achievements/HighFive.webp"),
-            id: '10' 
+            id: '10'
         },
         {
             dlc: 'Base Game',
@@ -146,7 +123,7 @@ function Achievements() {
             req: 'Earn $100,000 delivering cargos',
             status: '100%',
             imgsrc: require("../images/achievements/Cha-Ching.webp"),
-            id: '1' 
+            id: '1'
         },
         {
             dlc: 'Base Game',
@@ -154,7 +131,7 @@ function Achievements() {
             req: 'Fully upgrade one of your garages',
             status: '100%',
             imgsrc: require("../images/achievements/FinalMakeover.webp"),
-            id: '11' 
+            id: '11'
         },
         {
             dlc: 'Base Game',
@@ -162,7 +139,7 @@ function Achievements() {
             req: 'Successfully park a trailer at a delivery point',
             status: '100%',
             imgsrc: require("../images/achievements/NotAProblem.webp"),
-            id: '12' 
+            id: '12'
         },
         {
             dlc: 'Base Game',
@@ -170,7 +147,7 @@ function Achievements() {
             req: 'Successfully park a trailer at a hard delivery point',
             status: '100%',
             imgsrc: require("../images/achievements/LikeABoss.webp"),
-            id: '13' 
+            id: '13'
         },
         {
             dlc: 'Base Game',
@@ -178,7 +155,7 @@ function Achievements() {
             req: 'Finish 50 deliveries',
             status: '100%',
             imgsrc: require("../images/achievements/IThink.webp"),
-            id: '14' 
+            id: '14'
         },
         {
             dlc: 'Base Game',
@@ -186,7 +163,7 @@ function Achievements() {
             req: 'Buy and apply a custom paintjob',
             status: '100%',
             imgsrc: require("../images/achievements/PimpMy.webp"),
-            id: '15' 
+            id: '15'
         },
         {
             dlc: 'Base Game',
@@ -194,7 +171,7 @@ function Achievements() {
             req: 'Buy your own truck',
             status: '100%',
             imgsrc: require("../images/achievements/Bmi.webp"),
-            id: '3' 
+            id: '3'
         },
         {
             dlc: 'Base Game',
@@ -202,7 +179,7 @@ function Achievements() {
             req: 'Buy your own truck',
             status: '100%',
             imgsrc: require("../images/achievements/GasGuzzler.webp"),
-            id: '2' 
+            id: '2'
         },
         {
             dlc: 'Base Game',
@@ -210,7 +187,7 @@ function Achievements() {
             req: 'Buy your own truck',
             status: '100%',
             imgsrc: require("../images/achievements/SilverState.webp"),
-            id: '16' 
+            id: '16'
         },
         {
             dlc: 'Base Game',
@@ -218,7 +195,7 @@ function Achievements() {
             req: 'Buy your own truck',
             status: '100%',
             imgsrc: require("../images/achievements/Gold Fever.webp"),
-            id: '17' 
+            id: '17'
         },
         {
             dlc: 'Base Game',
@@ -226,24 +203,37 @@ function Achievements() {
             req: 'Buy your own truck',
             status: '100%',
             imgsrc: require("../images/achievements/ParkingChallenge.webp"),
-            id: '18' 
+            id: '18'
         },
     ]
 
     const customStyles = {
-       table: {
+        table: {
             style: {
                 height: '500px',
-                color: 'black', 
+                color: 'black',
             },
-       } ,
+        },
     }
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('https://localhost:25565/Achievement')
+            .then(response => response.json())
+            .then(apiData => {
+                setData(apiData);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    }, []);
 
     return (
         <DataTable
             columns={columns}
             data={data}
-            theme = "dark"
+            theme="dark"
         />
     );
 };
