@@ -1,5 +1,7 @@
-import React from "react";
+// Desc: This is the data table for the achievements page
+import React, { useState, useEffect } from "react";
 import DataTable from "react-data-table-component";
+
 
 const columns = [
     {
@@ -28,6 +30,7 @@ const columns = [
         selector: row => row.status,
         sortable: true,
     }
+    
 ];
 
 const data = [
@@ -61,6 +64,9 @@ const data = [
     },
 ]
 
+
+
+
 /*const customStyles = {
     table: {
         style: {
@@ -70,7 +76,22 @@ const data = [
     },
 };
 */
+
+
 function MyDataTable() {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+    fetch('https://10.82.137.128/Job')
+        .then(response => response.json())
+    .then(apiData => {
+            setData(apiData);
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
+    }, []);
+    
     return (
         <DataTable
             columns={columns}
