@@ -51,6 +51,15 @@ const data = [
     },
 ]
 
+/*const customStyles = {
+    table: {
+        style: {
+            color: yellow,
+            backgroundColor: black,
+        },
+    },
+};
+*/
 function MyDataTable() {
     return (
         <DataTable

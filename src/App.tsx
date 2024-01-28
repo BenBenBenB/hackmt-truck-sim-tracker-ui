@@ -6,9 +6,9 @@ import MyDataTable from './Components/Pages/MyDataTable';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <MyDataTable />
-      </header>
+      </div>
     </div>
   );
 }
