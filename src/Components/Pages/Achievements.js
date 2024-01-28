@@ -48,7 +48,7 @@ function Achievements() {
         },
         {
             name: 'Acheivement Name',
-            cell: row => <button onClick={NavToAchievement}>  bwuh </button>,
+            cell: row => <button style={{backgroundColor: 'transparent', border: 'transparent'}} onClick={NavToAchievement}>{row.title}</button>,
             sortable: true,
         },
         {
