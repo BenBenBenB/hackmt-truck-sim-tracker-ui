@@ -16,12 +16,5 @@ const AchievementInfo = () => {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 export default AchievementInfo;
