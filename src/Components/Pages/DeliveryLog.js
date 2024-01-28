@@ -1,115 +1,83 @@
-// Desc: This is the data table for the achievements page
+// Desc: This is the data table for the Delivery Log page
 import React, { useState, useEffect } from "react";
 import DataTable from "react-data-table-component";
 
 const columns = [
     {
-        name: 'Cargo',
-        selector: 'cargo',
+        name: 'ID',
+        selector: row => row.id,
         sortable: true,
     },
     {
-        name: 'Day',
-        selector: 'day',
+        name: 'Cargo Name',
+        selector: row => row.cargoName,
         sortable: true,
     },
     {
-        name: 'From',
-        selector: 'from',
+        name: 'Sender',
+        selector: row => row.depotFromName,
         sortable: true,
     },
     {
-        name: 'To',
-        selector: 'to',
+        name: 'Origin',
+        selector: row => row.depotFromLocation,
         sortable: true,
     },
     {
-        name: 'Distance',
-        selector: 'distance',
+        name: 'Receiver',
+        selector: row => row.depotToName,
         sortable: true,
     },
     {
-        name: 'Time Spent',
-        selector: 'timeSpent',
+        name: 'Destination',
+        selector: row => row.depotToLocation,
         sortable: true,
     },
     {
-        name: 'Rating',
-        selector: 'rating',
+        name: 'Paid',
+        selector: row => row.paid,
         sortable: true,
     },
     {
-        name: 'Income',
-        selector: 'income',
+        name: 'Experience',
+        selector: row => row.exp,
         sortable: true,
     },
     {
-        name: 'XP',
-        selector: 'xp',
+        name: 'Perfect',
+        selector: row => row.perfect? "Yes" : "No",
         sortable: true,
     }
 ];
 
 const deliveryLogData = [
     {
-        cargo: 'Electronics',
-        day: 'Monday',
-        from: 'Los Angeles',
-        to: 'San Francisco',
-        distance: '400 miles',
-        timeSpent: '4 hours',
-        rating: '5 stars',
-        income: '$500',
-        xp: '100',
-    },
-    {
-        cargo: 'Furniture',
-        day: 'Tuesday',
-        from: 'San Francisco',
-        to: 'Seattle',
-        distance: '800 miles',
-        timeSpent: '8 hours',
-        rating: '4 stars',
-        income: '$800',
-        xp: '150',
-    },
-    {
-        cargo: 'Food',
-        day: 'Wednesday',
-        from: 'Seattle',
-        to: 'Portland',
-        distance: '150 miles',
-        timeSpent: '2 hours',
-        rating: '3 stars',
-        income: '$300',
-        xp: '50',
-    },
-    {
-        cargo: 'Clothing',
-        day: 'Thursday',
-        from: 'Portland',
-        to: 'Los Angeles',
-        distance: '1000 miles',
-        timeSpent: '10 hours',
-        rating: '5 stars',
-        income: '$1000',
-        xp: '200',
-    },
+        "id": 1,
+        "cargoName": "CargoToDo",
+        "depotFromName": "ToName",
+        "depotFromLocation": "Todo, TD",
+        "depotToName": "FromName",
+        "depotToLocation": "Todo, TD",
+        "paid": 0,
+        "exp": 0,
+        "perfect": false
+      }
+    
 ];
 
 function DeliveryLog() {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState(deliveryLogData);
 
-    useEffect(() => {
-        fetch('https://10.82.137.128/Job')
-            .then(response => response.json())
-            .then(apiData => {
-                setData(apiData);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
-    }, []);
+    // useEffect(() => {
+    //     fetch('https://10.82.137.128/Job')
+    //         .then(response => response.json())
+    //         .then(apiData => {
+    //             setData(apiData);
+    //         })
+    //         .catch(error => {
+    //             console.error('Error fetching data:', error);
+    //         });
+    // }, []);
 
     return (
         <DataTable
