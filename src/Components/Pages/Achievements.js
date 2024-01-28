@@ -35,8 +35,9 @@ function Achievements() {
     */
 
     const navigate = useNavigate();
-    function NavToAchievement() {
+    function NavToAchievement(id) {
         navigate("/about");
+
     }
 
     const columns = [
@@ -76,6 +77,7 @@ function Achievements() {
             req: 'Discover every city in California',
             status: '48%',
             imgsrc: require("../images/achievements/california.webp"),
+            id: '1'
         },
         {
             dlc: 'Base Game',
@@ -83,6 +85,7 @@ function Achievements() {
             req: 'Deliver cargo to a port in Oakland and a port in San Francisco',
             status: '50%',
             imgsrc: require("../images/achievements/SeaDog.webp"),
+            id: '2'
         },
         {
             dlc:  'Base Game',
@@ -90,6 +93,7 @@ function Achievements() {
             req: 'Deliver cargo from all 3 vineyards in California',
             status: '100%',
             imgsrc: require("../images/achievements/Cheers.webp"),
+            id: '2'
         },
         {
             dlc: 'Base Game',
@@ -97,6 +101,119 @@ function Achievements() {
             req: 'Drive 10,000 miles during deliveries',
             status: '100%',
             imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Rig Master',
+            req: 'Buy your own truck',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Company Collector',
+            req: 'Perform deliveries for at least 15 different companies',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'High Five',
+            req: 'Complete a perfect delivery (no damage, no fines, in-time) for a job that is at least 600 miles',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Cha-Ching',
+            req: 'Earn $100,000 delivering cargos',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Final Makeover',
+            req: 'Fully upgrade one of your garages',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Not a Problem',
+            req: 'Successfully park a trailer at a delivery point',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Like a Boss',
+            req: 'Successfully park a trailer at a hard delivery point',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'I Think I Like It',
+            req: 'Finish 50 deliveries',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Pimp My Truck',
+            req: 'Buy and apply a custom paintjob',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'What\'s Your BMI?',
+            req: 'Buy your own truck',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Gas Guzzler',
+            req: 'Buy your own truck',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Silver State',
+            req: 'Buy your own truck',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Gold Fever',
+            req: 'Buy your own truck',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
+        },
+        {
+            dlc: 'Base Game',
+            title: 'Parking Challenge',
+            req: 'Buy your own truck',
+            status: '100%',
+            imgsrc: require("../images/achievements/Warming up.webp"),
+            id: '2' 
         },
     ]
 
