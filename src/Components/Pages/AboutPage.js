@@ -13,7 +13,7 @@ export default function AboutPage() {
             <div style={{ marginTop: '20px' }}>
                 <Button
                     variant="dark"
-                    href="https://github.com/BenBenBenB/hackmt-truck-sim-tracker-ui"
+                    href="https://github.com/BenBenBenB/hackmt-truck-sim-tracker-api"
                     target="_blank"
                     rel="noopener noreferrer">
                     Truck Sim Tracker
@@ -22,7 +22,7 @@ export default function AboutPage() {
             <div style={{ marginTop: '20px' }}>
                 <Button 
                     variant="dark" 
-                    href="https://github.com/BenBenBenB/hackmt-truck-sim-tracker-api" 
+                    href="https://github.com/BenBenBenB/hackmt-truck-sim-tracker-ui" 
                     target="_blank" 
                     rel="noopener noreferrer">
                     Truck Sim Tracker UI
