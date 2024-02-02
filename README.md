@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Truck Sim Tracker - React UI
+
+This was created for HackMT 2024. It is designed to work with an api over at [hackmt-truck-sim-tracker-api](https://github.com/BenBenBenB/hackmt-truck-sim-tracker-api).
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
